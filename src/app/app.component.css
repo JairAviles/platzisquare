@@ -1,3 +1,8 @@
 agm-map {
-    height: 300px;
-  }
+  height: 300px;
+}
+
+.pair_number {
+  background-color: aliceblue;
+  color: blue;
+}

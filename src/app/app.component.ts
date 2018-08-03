@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'PlatziSquare';
   places: any = [
     {
-      active: true,
+      active: false,
       name: 'Floreria la Gardenia'
     },
     {
@@ -29,7 +29,7 @@ export class AppComponent {
       name: 'Supermarket Safeway'
     },
     {
-      active: true,
+      active: false,
       name: 'Convience store Ikea'
     }
   ];
