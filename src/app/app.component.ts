@@ -10,27 +10,45 @@ export class AppComponent {
   places: any = [
     {
       active: false,
-      name: 'Floreria la Gardenia'
+      closeness: 1,
+      distance: 1,
+      name: 'Floreria la Gardenia',
+      plan: 'premium'
     },
     {
       active: true,
-      name: 'Donas DunkiDonuts'
+      closeness: 2,
+      distance: 1.8,
+      name: 'Donas DunkiDonuts',
+      plan: 'free'
     },
     {
       active: true,
-      name: 'Veterinaria Camila y Hachi'
+      closeness: 1,
+      distance: 5,
+      name: 'Veterinaria Camila y Hachi',
+      plan: 'premium'
     },
     {
       active: false,
-      name: 'Panda Express'
+      closeness: 3,
+      distance: 10,
+      name: 'Panda Express',
+      plan: 'free'
     },
     {
       active: true,
-      name: 'Supermarket Safeway'
+      closeness: 2,
+      distance: 35,
+      name: 'Supermarket Safeway',
+      plan: 'premium'
     },
     {
       active: false,
-      name: 'Convience store Ikea'
+      closeness: 1,
+      distance: 120,
+      name: 'Convenience store Ikea',
+      plan: 'free'
     }
   ];
   lat: Number = 37.757815;

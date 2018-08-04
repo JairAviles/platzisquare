@@ -8,7 +8,16 @@
   </ng-container>
 </ul>
 <ul>
-    <ng-container *ngFor="let place of places; let i = index" >
-      <li [ngStyle]="{color: (place.active) ? 'black' : 'gray'}" [ngClass]="{pair_number: (i + 1) %2 !== 0}">{{place.name}}</li>
+    <ng-container *ngFor="let place of places; let i = index" [ngSwitch]="place.closeness">
+      <a>
+        <li appCountClicks
+            [ngStyle]="{color: (place.active) ? 'black' : 'gray'}" 
+            [ngClass]="{pair_number: (i + 1) %2 !== 0}" [appRemark]="place.plan">
+            {{place.name}} -
+            <span *ngSwitchCase="1" [ngStyle]="{color: 'green'}">Closer</span>
+            <span *ngSwitchCase="2" [ngStyle]="{color: 'black'}">Close</span>
+            <span *ngSwitchCase="3" [ngStyle]="{color: 'red'}">Far</span>
+        </li>
+      </a>  
     </ng-container>
   </ul>
