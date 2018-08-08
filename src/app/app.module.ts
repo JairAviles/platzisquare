@@ -7,13 +7,15 @@ import { AgmCoreModule } from '@agm/core';
 import { CountCicksDirective } from './directives/count-clicks.directive';
 import { RemarkDirective } from './directives/remark.directive';
 import { Routing } from './app-routing.module';
-import { RouterModule } from '../../node_modules/@angular/router';
+import { RouterModule } from '@angular/router';
+import { ContactComponent } from './contact/contact.component';
 import { DetailComponent } from './detail/detail.component';
 import { PlaceComponent } from './place/place.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ContactComponent,
     DetailComponent,
     PlaceComponent,
     RemarkDirective,

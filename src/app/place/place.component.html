@@ -8,7 +8,9 @@
       <h2>Closer places</h2>
       <ul class="list-group">
         <ng-container *ngFor="let place of places">
-          <li *ngIf="place.active" class="list-group-item">{{place.name}}</li>
+          <a routerLink="/detail/{{place.id}}" [queryParams]="{action:'view', referer:'google'}">
+            <li *ngIf="place.active" class="list-group-item">{{place.name}}</li>
+          </a>
         </ng-container>
       </ul>
     </div>
