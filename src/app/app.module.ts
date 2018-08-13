@@ -12,6 +12,8 @@ import { ContactComponent } from './contact/contact.component';
 import { DetailComponent } from './detail/detail.component';
 import { PlaceComponent } from './place/place.component';
 
+import { PlacesService } from './services/places.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +31,7 @@ import { PlaceComponent } from './place/place.component';
     }),
     Routing
   ],
-  providers: [],
+  providers: [PlacesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
